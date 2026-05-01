@@ -10,10 +10,10 @@ services:
       - backend
 
   frontend:
-    build: ./frontend
+    image: bhaveshp14/fullstack-frontend:latest
 
   backend:
-    build: ./backend
+    image: bhaveshp14/fullstack-backend:latest
     ports:
       - "5000:5000"
     depends_on:
